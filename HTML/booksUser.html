@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../lib/css/bootstrap.css">
+
+    <meta charset="UTF-8">
+    <title>Brugtbogsbørs</title>
+</head>
+
+<body>
+
+<!-- her er en kommentar -->
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="indexUser.html">Forside</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Min bruger
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="userpage.html">Min profil</a></li>
+                            <li><a href="#">Rediger profil</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Opret annonce</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li> <button class="btn btn-success btn-block" id="logOutLink">Log ud</button> <a href="index.html"></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="page-header">
+        <h1>Se alle bøger</h1>
+    </div>
+
+    <table class="table">
+        <thead>
+        <th>Titel</th>
+        <th>Forfatter(e)</th>
+        <th>Udgave</th>
+        <th>ISBN</th>
+        <!-- <th style="width: 70px;">Pris</th> -->
+
+        </thead>
+
+
+        <tbody id="booksTableBody">
+        <tr></tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<script type="text/javascript" src="../lib/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../js/sdk.js"></script>
+<script type="text/javascript" src="../js/books.js"></script>
+<script type="text/javascript" src="../lib/js/bootstrap.js"></script>
+
+
+
+</body>
+
+</html>

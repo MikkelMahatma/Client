@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../lib/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.lumen.min.css">
+    <link rel="stylesheet" href="css/sticky-footer.css">
+
+    <meta charset="UTF-8">
+    <title>opretbruger</title>
+</head>
+
+<body>
+
+<!-- her er en kommentar -->
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brugtbogsbørs.dk</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="ads.html">Se alle annoncer <span class="sr-only">(current)</span></a></li>
+                    <li><a href="books.html">Se alle bøger</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Log ind</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createuser.html">Opret bruger</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+        <h1>Velkommen til brugeroprettelse</h1>
+        <p>Her kan du oprette en bruger!</p>
+        <fieldset>
+
+            <legend>Opret bruger</legend>
+
+            <div class="form-group">
+                <label for="inputUsername" class="col-lg-2 control-label">Username</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+
+                <div>
+                    <label for="inputPhonenumber" class="col-lg-2 control-label">Mobilnummer</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Mobilnummer">
+                    </div>
+
+                    <div>
+                        <label for="inputAdress" class="col-lg-2 control-label">Adresse</label>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Adresse">
+                        </div>
+
+                        <div>
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-success pull-right" id="loginButton">Opret bruger</button>
+
+        </fieldset>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="../lib/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../lib/js/bootstrap.js"></script>
+
+
+
+</body>
+
+</html>
