@@ -147,7 +147,7 @@ var SDK = {
             SDK.request({method: "GET", url: "/book", headers: {filter: {include: ["authors", "publisher"]}}}, cb);
         },
         create: function (data, cb) {
-            SDK.request({method: "POST", url: "/book", data: data, headers: {authorization: SDK.Storage.load("tokenId")}}, cb);
+            SDK.request({method: "POST", url: "/createbook", data: data}, cb);
         }
     },
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../lib/css/bootstrap.css">
+
+
+    <meta charset="UTF-8">
+    <title>Opret bog</title>
+</head>
+
+<body>
+
+<!-- her er en kommentar -->
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Brugtbogsbørs.dk</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="ads.html">Se alle annoncer <span class="sr-only">(current)</span></a></li>
+                    <li><a href="books.html">Se alle bøger</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Min bruger
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="userpage.html">Min profil</a></li>
+                            <li><a href="#">Rediger profil</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="createbook.html">Opret annonce</a></li>
+                            <li><a href="#">Rediger annonce</a></li>
+                            <li><a href="#">Se dine annoncer</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li> <button class="btn btn-success btn-block" id="logOutLink">Log ud</button> <a href="index.html"></a></li>
+                        </ul>
+                    </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+        <h1>Velkommen til bogoprettelse</h1>
+        <p>Her kan du oprette en bog!</p>
+        <fieldset>
+
+            <legend>Opret en bog</legend>
+
+            <div class="form-group">
+                <label for="newBookTitle" class="col-lg-2 control-label">Titel</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="newBookTitle" placeholder="Titel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="newBookAuthor" class="col-lg-2 control-label">Forfatter(e)</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="newBookAuthor" placeholder="Forfatter(e)">
+                </div>
+
+                <div>
+                    <label for="newBookEdition" class="col-lg-2 control-label">Udgave</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="newBookEdition" placeholder="Udgave">
+                    </div>
+
+                    <div>
+                        <label for="newBookIsbn" class="col-lg-2 control-label">ISBN</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="newBookIsbn" placeholder="ISBN">
+                        </div>
+
+                            <button class="btn btn-success pull-right" id="addNewBookButton">Opret Bog</button>
+
+        </fieldset>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="../lib/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../lib/js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/createBook.js"></script>
+<script type="text/javascript" src="../js/sdk.js"></script>
+
+
+
+</body>
+
+</html>
