@@ -130,9 +130,9 @@ var SDK = {
         $.ajax({
             url: SDK.serverURL + options.url,
             method: options.method,
-            contentType: "application/json",
             dataType: "json",
             data: JSON.stringify(options.data),
+            xhrFields: { withCredentials: true },
             success: function (data, status, xhr) {
                 cb(null, data, status, xhr);
             },
@@ -161,7 +161,7 @@ var SDK = {
         create: function (data, cb) {
             SDK.request({method: "POST", url: "/createuser", data: data}, cb);
 
-        },
+        }
     },
 
     Publisher: {

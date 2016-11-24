@@ -6,6 +6,7 @@ var $booksTableBody = $("#booksTableBody");
 
 $.ajax({
     type: "GET",
+    xhrFields: {withCredentials: true},
     dataType: "json",
     url: "https://localhost:8000/getbooks",
     success: function (book, status, xhr) {

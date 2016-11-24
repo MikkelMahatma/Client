@@ -4,37 +4,24 @@
 
 $("#addNewUserButton").on("click", function() {
 
-    var mobilepayIsChosen = 0;
-    if($("input[name=mobilepay]:checked").val()) {
-        mibilepayIsChosen = 1;
-    }
-        var cashIsChosen = 0;
-        if($("input[name=mobilepay]:checked").val()) {
-            cashIsChosen = 1;
-    }
-        var transferIsChosen = 0;
-        if($("input[name=mobilepay]:checked").val()){
-            transferIsChosen = 1;
-    }
-
     var user = {
-        username: $("newUserUserName").val(),
-        password: $("newUserPassword").val(),
-        phonenumber: parseInt($("newUserPhonenumber").val()),
-        adress: $("newUserAdress").val(),
-        email: $("newUserEmail").val(),
-
-        mobilepay: mobilepayIsChosen,
-        cash: cashIsChosen,
-        transfer: transferIsChosen
+        username: $("#newUserUserName").val(),
+        password: $("#newUserPassword").val(),
+        phonenumber: +$("#newUserPhonenumber").val(),
+        address: $("#newUserAdress").val(),
+        email: $("#newUserEmail").val(),
+        mobilepay: +$("#mobilepay").prop("checked"),
+        cash: +$("#cash").prop("checked"),
+        transfer: +$("#transfer").prop("checked")
     };
+    console.log(user);
 
     SDK.User.create(user, function(err, data) {
-        if (err) throw err;
-        xhrFields: { withCredentials: true }
+        if (err) throw JSON.stringify(err);
         console.log(user.username);
 
-        window.location.href = "usercreated.html";
+        alert("Tillykke, du har nu opretet en bruger");
+        window.location.href = "userpage.html";
     });
 
 });
