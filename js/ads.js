@@ -2,6 +2,8 @@
  * Created by mikkelaltmann on 21/11/2016.
  */
 //adds
+
+//Test
 $(document).ready(function () {
 
     var $adsTableBody = $("#adsTableBody");
