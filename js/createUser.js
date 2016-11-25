@@ -20,8 +20,8 @@ $("#addNewUserButton").on("click", function() {
         if (err) throw JSON.stringify(err);
         console.log(user.username);
 
-        alert("Tillykke, du har nu opretet en bruger");
-        window.location.href = "userpage.html";
+        /*alert("Tillykke, du har nu opretet en bruger");*/
+        window.location.href = "usercreated.html";
     });
 
 });
