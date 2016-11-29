@@ -9,7 +9,7 @@ $(document).ready(function () {
         var username = $("#username").val();
         var password = $("#password").val();
 
-        SDK.login(username, password, function(err, data){
+        SDK.Identification.login(username, password, function(err, data){
 
 
             //On wrong credentials
@@ -33,7 +33,7 @@ $(document).ready(function () {
     });
 
     $("#logOutLink").on("click", function(){
-        SDK.logOut();
+        SDK.Identification.logOut();
         window.location.href = "index.html";
 
     });

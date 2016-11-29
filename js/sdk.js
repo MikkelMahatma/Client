@@ -132,7 +132,7 @@ var SDK = {
             method: options.method,
             dataType: "json",
             data: JSON.stringify(options.data),
-            xhrFields: { withCredentials: true },
+            xhrFields: {withCredentials: true},
             success: function (data, status, xhr) {
                 cb(null, data, status, xhr);
             },
@@ -144,10 +144,13 @@ var SDK = {
 
     Book: {
         getAll: function (cb) {
-            SDK.request({method: "GET", url: "/book", headers: {filter: {include: ["authors", "publisher"]}}}, cb);
+            SDK.request({method: "GET", url: "/getbooks"}, cb);
         },
         create: function (data, cb) {
             SDK.request({method: "POST", url: "/createbook", data: data}, cb);
+        },
+        deletebook: function (data, cb) {
+            SDK.request({method: "POST", url: "/deletebook", data: data}, cb);
         }
     },
 
@@ -155,44 +158,64 @@ var SDK = {
         getAll: function (cb) {
             SDK.request({method: "GET", url: "/staffs"}, cb);
         },
-        current:function () {
+        current: function () {
             return SDK.Storage.load("user");
         },
         create: function (data, cb) {
             SDK.request({method: "POST", url: "/createuser", data: data}, cb);
 
+        },
+        getmyads: function (data, cb) {
+            SDK.request({method: "GET", url: "/getmyads", data: data}, cb);
+        },
+        updatemyads: function (data, cb) {
+            SDK.request({method: "POST", url: "updatead", data: data}, cb);
+
+        },
+        updateuser: function (data, cb) {
+            SDK.request({method: "POST", url: "/updateuser", data: data}, cb);
+        }
+    },
+
+    Admin: {
+        createadmin: function (data, cb) {
+            SDK.request({method: "POST", url: "/createadmin", data: data}, cb);
         }
     },
 
     Ad: {
         create: function (data, cb) {
             SDK.request({method: "POST", url: "/createad", data: data}, cb);
+        },
+
+        delete: function (data, cb) {
+            SDK.request({method: "POST", url: "/deletead", data: data}, cb);
+        },
+
+        show: function (cb) {
+            SDK.request({method: "GET", url: "/getads"}, cb)
+
         }
     },
 
-    Author: {
-        getAll: function (cb) {
-            SDK.request({method: "GET", url: "/authors"}, cb);
-        }
-    },
+    Identification: {
+        logOut: function () {
+            SDK.Storage.remove("tokenId");
+            SDK.Storage.remove("userId");
+            SDK.Storage.remove("user");
+        },
 
-    logOut:function() {
-        SDK.Storage.remove("tokenId");
-        SDK.Storage.remove("userId");
-        SDK.Storage.remove("user");
-    },
-
-    login: function (username, password, cb) {
-        this.request({
-            data: {
+        login: function (username, password, cb) {
+            SDK.request({
+                data: {
                 username: username,
                 password: password
-            },
-            url: "/login",
-            method: "POST"
+        },
+                url: "/login",
+                method: "POST"
         }, function (err, data) {
 
-            //On login-error
+        //On login-error
             if (err) return cb(err);
 
             SDK.Storage.persist("tokenId", data.id);
@@ -201,9 +224,9 @@ var SDK = {
 
             cb(null, data);
 
-        });
+                });
+            }
     },
-
     Storage: {
         prefix: "BookStoreSDK",
         persist: function (key, value) {
@@ -214,22 +237,12 @@ var SDK = {
             try {
                 return JSON.parse(val);
             }
-            catch (e){
+            catch (e) {
                 return val;
             }
         },
-        remove:function (key) {
+        remove: function (key) {
             window.localStorage.removeItem(this.prefix + key);
         }
     }
-
-
 };
-function encryptDecrypt(input) {
-    var key = ['A', 'B', 'C'];
-    var out = "";
-    for (var i = 0; i < input.length; i++) {
-        out += (String.fromCharCode(((input.charAt(i)).charCodeAt(0) ^ (key[i % key.length]).charCodeAt(0))));
-    }
-    return out;
-}
