@@ -1,4 +1,7 @@
 /**
+ * Created by mikkelaltmann on 29/11/2016.
+ */
+/**
  * Created by mikkelaltmann on 21/11/2016.
  */
 //adds
@@ -7,7 +10,7 @@
 $(document).ready(function () {
 
 //Fires on page-load
-    SDK.Ad.show(function (err, data) {
+    SDK.Ad.showuser(function (err, data) {
         if (err) throw JSON.stringify(err);
         console.log(data);
 
@@ -23,7 +26,7 @@ $(document).ready(function () {
                 "<td>" + ad.comment + "</td>" +
                 "<td>" + ad.price + "</td>" +
                 //slet knappen skal kun komme når der er en bruger der er logget ind
-                /*"<td><a role='button' id='DeleteAdButton' href='#' class='btn btn-success btn-lg' >slet annonce</a></td>"*/
+                "<td><a role='button' id='DeleteAdButton' href='#' class='btn btn-success btn-lg' >Slet annonce</a></td>"+
                 "</tr>")
         });
 

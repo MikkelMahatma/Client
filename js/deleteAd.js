@@ -14,7 +14,7 @@ $("#DeleteAdButton").on("click", function() {
         console.log(ad.isbn);
 
         alert("Tillykke, du har nu slettet en ny annonce!");
-        window.location.href = "adsUser.html";
+        window.location.href = "myadsUser.html";
     });
 
 });

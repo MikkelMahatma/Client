@@ -15,7 +15,7 @@ $("#updateUserButton").on("click", function() {
     };
     console.log(user);
 
-    SDK.User.create(user, function(err, data) {
+    SDK.User.updateuser(user, function(err, data) {
         if (err) throw JSON.stringify(err);
         console.log(user.username);
 

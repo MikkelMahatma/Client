@@ -17,7 +17,7 @@ $("#addNewAdButton").on("click", function() {
         console.log(ad.isbn);
 
         alert("Tillykke, du har nu opretet en ny annonce!");
-        window.location.href = "adsUser.html";
+        window.location.href = "myadsUser.html";
     });
 
 });
