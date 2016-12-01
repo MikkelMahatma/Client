@@ -4,7 +4,7 @@
 $("#DeleteAdButton").on("click", function() {
 
     var ad = {
-        adid: +$("#deleteAdAdId").val()
+        adid: +$("#DeleteAdButton").val()
 
     };
     console.log(ad);
