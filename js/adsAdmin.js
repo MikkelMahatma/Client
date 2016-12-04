@@ -23,23 +23,33 @@ $(document).ready(function () {
                 "<td>" + ad.comment + "</td>" +
                 "<td>" + ad.price + "</td>" +
                 //slet knappen skal kun komme når der er en bruger der er logget ind
-                "<td><a role='button' id='DeleteAdButton' class='btn btn-success btn-lg' data-adid="+ ad.adId + ">Slet annonce</a></td>"+
+                "<td><input role='button' value='Slet annonce' class='btn btn-success btn-md DeleteAdButton' data-adid="+ ad.adId + "></td>"+
                 "</tr>")
         });
 
-        $("#DeleteAdButton").on("click", function () {
-            window.alert("Er du sikker på at du vil slette annoncen?");
+        $(".DeleteAdButton").on("click", function () {
+            var variable = confirm("Ønsker du at slette denne annonce?");
+            if (variable == true) {
 
-            var $deleteAd = $(this);
+                var $deleteAd = $(this);
 
-            var ad = {
-                id: $deleteAd.data("adid")
+                var ad = {
+                    id: $deleteAd.data("adid")
+                }
+                SDK.Ad.delete(ad, function (err, data) {
+                    if (err) throw JSON.stringify(err);
+                    location.reload();
+
+                })
+
             }
-            SDK.Ad.delete(ad, function (err, data) {
-                if (err) throw JSON.stringify(err);
-                location.reload();
 
-            })
+            else {
+
+                window.close();
+
+            }
+
 
         })
 

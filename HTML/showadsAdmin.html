@@ -28,16 +28,30 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav">
-                    <li><a href="ads.html">Se alle annoncer <span class="sr-only">(current)</span></a></li>
-                    <li><a href="books.html">Se alle bøger</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.html">Log ind</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="createuser.html">Opret bruger</a></li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Min bruger
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="adminpage.html">Admin side</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="createuserAdmin.html">Opret en bruger </a></li>
+                            <li><a href="userlistAdmin.html">Slet bruger </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="oprydning/deleteadAdmin.html">Slet annonce </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="createbookAdmin.html">Opret bog </a></li>
+                            <li><a href="booksAdmin.html">Slet bog </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li> <button class="btn btn-success btn-block" id="logOutLink">Log ud</button> <a href="index.html"></a></li>
+                        </ul>
+                    </div>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -72,7 +86,7 @@
 <script type="text/javascript" src="../lib/js/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="../lib/js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/sdk.js"></script>
-<script type="text/javascript" src="../js/ads.js"></script>
+<script type="text/javascript" src="../js/adsAdmin.js"></script>
 <script type="text/javascript" src="../js/login.js"></script>
 
 

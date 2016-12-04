@@ -30,36 +30,41 @@ var SDK = {
         },
         create: function (data, cb) {
             SDK.request({method: "POST", url: "/createbook", data: data}, cb);
-        },
-        deletebook: function (data, cb) {
-            SDK.request({method: "POST", url: "/deletebook", data: data}, cb);
         }
     },
 
     User: {
-        getAll: function (cb) {
-            SDK.request({method: "GET", url: "/staffs"}, cb);
-        },
-        current: function () {
-            return SDK.Storage.load("user");
-        },
         create: function (data, cb) {
-            SDK.request({method: "POST", url: "/createuser", data: data}, cb);
-
+            SDK.request({method: "POST", url:"/createuser", data: data}, cb);
         },
-        getmyads: function (data, cb) {
-            SDK.request({method: "GET", url: "/getmyads", data: data}, cb);
-        },
-
         updateuser: function (data, cb) {
-            SDK.request({method: "POST", url: "/updateuser", data: data}, cb);
+            SDK.request({method: "POST", url:"/updateuser", data: data}, cb);
+        },
+        deletemyuser: function (data, cb) {
+            SDK.request({method: "POST", url:"/deleteuser", data: data}, cb);
+        },
+        getmyuser: function (cb) {
+            SDK.request({method: "GET", url: "/getuser"}, cb)
         }
     },
 
     Admin: {
         createadmin: function (data, cb) {
             SDK.request({method: "POST", url: "/createadmin", data: data}, cb);
+        },
+        showusers: function (cb) {
+            SDK.request({method: "GET", url: "/getusers"}, cb);
+        },
+        deleteuser: function (data, cb) {
+            SDK.request({method: "POST", url: "/deleteuseradmin", data: data}, cb)
+        },
+        deletebook: function (data, cb) {
+            SDK.request({method: "POST", url: "/deletebook", data: data}, cb);
+        },
+        updateadmin: function (data, cb) {
+            SDK.request({method: "POST", url: "/updateuseradmin", data: data}, cb);
         }
+
     },
 
     Ad: {
@@ -72,14 +77,22 @@ var SDK = {
         },
 
         show: function (cb) {
-            SDK.request({method: "GET", url: "/getads"}, cb)
+            SDK.request({method: "GET", url: "/getads"}, cb);
         },
-        showuser: function (cb) {
-            SDK.request({method: "GET", url: "/getmyads"}, cb)
+        showuserads: function (cb) {
+            SDK.request({method: "GET", url: "/getmyads"}, cb);
         },
         updatemyads: function (data, cb) {
             SDK.request({method: "POST", url: "/updatead", data: data}, cb);
-
+        },
+        showreservedads: function (cb) {
+            SDK.request({method: "GET", url: "/getmyreservations"}, cb);
+        },
+        reservead: function(data, cb) {
+            SDK.request({method: "POST", url: "/reservead", data: data}, cb);
+        },
+        deletereservation: function(data, cb) {
+            SDK.request({method: "POST", url: "/unlockad", data: data}, cb);
         }
     },
 

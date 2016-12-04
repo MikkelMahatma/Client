@@ -3,8 +3,6 @@
 <head>
 
     <link rel="stylesheet" href="../lib/css/bootstrap.css">
-    <link rel="stylesheet" href="lib/css/bootstrap.lumen.min.css">
-    <link rel="stylesheet" href="css/sticky-footer.css">
 
 
 
@@ -43,16 +41,13 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li><a href="adminpage.html">Admin side</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="createuser.html">Opret bruger </a></li>
-                                <li><a href="#">Rediger bruger</a></li>
-                                <li><a href="de">Slet bruger </a></li>
+                                <li><a href="createuserAdmin.html">Opret en bruger </a></li>
+                                <li><a href="userlistAdmin.html">Slet bruger </a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Rediger annonce </a></li>
-                                <li><a href="deleteadAdmin.html">Slet annonce </a></li>
+                                <li><a href="oprydning/deleteadAdmin.html">Slet annonce </a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="createbookAdmin.html">Opret bog </a></li>
-                                <li><a href="">Rediger bog </a></li>
-                                <li><a href="deletebookAdmin.html">Slet bog </a></li>
+                                <li><a href="booksAdmin.html">Slet bog </a></li>
                                 <li role="separator" class="divider"></li>
                                 <li> <button class="btn btn-success btn-block" id="logOutLink">Log ud</button> <a href="index.html"></a></li>
                             </ul>
@@ -63,9 +58,9 @@
         </nav>
         <div class="row">
             <div class="col-lg-3">
-                <p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Slet bruger</a></p>
-                <p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Slet annonce</a></p>
-                <p><a class="btn btn-primary btn-lg btn-block" href="#" role="button">Rediger bruger</a></p>
+                <p><a class="btn btn-primary btn-lg btn-block" href="userlistAdmin.html" role="button">Se alle brugere</a></p>
+                <p><a class="btn btn-primary btn-lg btn-block" href="showadsAdmin.html" role="button">Se alle annoncer</a></p>
+                <p><a class="btn btn-primary btn-lg btn-block" href="booksAdmin.html" role="button">Se alle bøger</a></p>
                 <p><a class="btn btn-primary btn-lg btn-block" href="createbookAdmin.html" role="button">Opret ny bog</a></p>
             </div>
             <div class="col-lg-9">

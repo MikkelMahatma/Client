@@ -5,28 +5,26 @@
 
     <link rel="stylesheet" href="../lib/css/bootstrap.css">
 
-
     <meta charset="UTF-8">
-    <title>Slet annonce</title>
+    <title>Se alle annoner</title>
 </head>
 
 <body>
 
-<!-- her er en kommentar -->
+<!-- Navbar -->
 
 <div class="container">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Forside</a>
+                <a class="navbar-brand" href="index.html">Forside</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,7 +45,7 @@
                         <li><a href="ads.html">Se annoncer</a></li>
                         <li><a href="createadUser.html">Opret annonce</a></li>
                         <li><a href="#">Rediger annonce</a></li>
-                        <li><a href="deleteadUser.html">Slet annonce</a></li>
+                        <li><a href="oprydning/deleteadUser.html">Slet annonce</a></li>
                         <li><a href="#">Se dine annoncer</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Se reserverede annoncer</a></li>
@@ -58,43 +56,24 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron">
-        <h1>Velkommen til slet annonce</h1>
-        <p>Her kan du slette en annonce!</p>
-
-            <div class="page-header">
-
-        <table class="table">
-            <thead>
-            <th>Titel</th>
-            <th>Author</th>
-            <th>Edition</th>
-            <th>ISBN</th>
-            <th>Rating</th>
-            <th>Komentarer</th>
-            <th>Pris</th>
-
-            </thead>
 
 
-            <tbody id="adsTableBody">
-
-
-            <tr></tr>
-            </tbody>
-        </table>
-
-
+    <div class="col-lg-9">
+        <div class="jumbotron">
+            <h1>Velkommen til slet-bruger siden!</h1>
+            <p>Her kan du slette din bruger!</p>
+            <p><a id='DeleteUserButton' class="btn btn-primary btn-lg btn-block" role="button">Slet din bruger</a></p>
         </div>
     </div>
 </div>
 
 
+
+
 <script type="text/javascript" src="../lib/js/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="../lib/js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/sdk.js"></script>
-<script type="text/javascript" src="../js/adsUser.js"></script>
-<script type="text/javascript" src="../js/deleteAd.js"></script>
+<script type="text/javascript" src="../js/deleteuserUser.js"></script>
 <script type="text/javascript" src="../js/login.js"></script>
 
 
