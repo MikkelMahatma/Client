@@ -27,7 +27,7 @@ $(document).ready(function () {
                 "<td>" + ad.price + "</td>" +
                 //slet knappen skal kun komme når der er en bruger der er logget ind
                 "<td><input type='button' value='Slet annonce' class='btn btn-success  btn-md DeleteAdButton' data-adid=" + ad.adId + "></td>" +
-                "<td><input type='button' value='Rediger annonce' class='btn btn-primary btn-md UptateAdButton' data-toggle='modal' data-target='#myModal'  data-adid=" + ad.adId + "></td>" +
+                "<td><input type='button' value='Rediger annonce' class='btn btn-primary btn-md' data-toggle='modal' data-target='#myModal'  data-adid=" + ad.adId + "></td>" +
                 "<td><input type='button' value='Reserver annonce' class='btn btn-success btn-md ReserveAdButton' data-adid=" + ad.adId + "></td>" +
                 "</tr>")
         });
@@ -70,9 +70,12 @@ $(document).ready(function () {
                 }
             });
         //mangler lige det sidste
-        $("#updateAdButton").on("click", function() {
+        $(".UpdateAdButton").on("click", function() {
+
+            var $updateAd = $(this);
 
             var ad = {
+                id: $updateAd.data("adid"),
                 comment: $("#newAdComment").val(),
                 rating: +$("#newAdRating").val(),
                 price: $("#newAdPrice").val()
