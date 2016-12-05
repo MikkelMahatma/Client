@@ -16,11 +16,12 @@ $(document).ready(function () {
                 "<td>" + ad.userUsername + "</td>" +
                 "<td>" + ad.userPhonenumber + "</td>" +
                 //slet knappen skal kun komme når der er en bruger der er logget ind
-                "<td><a role='button' id='DeleteReservedAdButton' class='btn btn-success btn-lg' data-adid="+ ad.adId + ">Slet reservation</a></td>"+
+                //"<td><input role='button' value='Slet annonce' class='btn btn-success  btn-md DeleteAdButton' data-adid=" + ad.adId + "></td>" +
+                "<td><input role='button' value='Slet reservation' class='btn btn-success btn-md DeleteReservedAdButton' data-adid="+ ad.adId + "></td>"+
                 "</tr>")
         });
 
-        $("#DeleteReservedAdButton").on("click", function () {
+        $(".DeleteReservedAdButton").on("click", function () {
             window.alert("Er du sikker på at du vil slette annoncen?");
 
             var $deleteAd = $(this);

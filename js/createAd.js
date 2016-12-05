@@ -6,7 +6,7 @@ $("#addNewAdButton").on("click", function() {
     var ad = {
         isbn: +$("#newAdIsbn").val(),
         comment: $("#newAdComment").val(),
-        rating: +$("#newAdRating").prop("checked"),
+        rating: +$("#newAdRating").val(),
         price: +$("#newAdPrice").val()
 
     };
@@ -17,7 +17,7 @@ $("#addNewAdButton").on("click", function() {
         console.log(ad.isbn);
 
         alert("Tillykke, du har nu opretet en ny annonce!");
-        window.location.href = "myadsUser.html";
+        window.location.href = "adsUser.html";
     });
 
 });

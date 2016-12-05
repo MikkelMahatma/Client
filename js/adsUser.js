@@ -26,9 +26,9 @@ $(document).ready(function () {
                 "<td>" + ad.comment + "</td>" +
                 "<td>" + ad.price + "</td>" +
                 //slet knappen skal kun komme når der er en bruger der er logget ind
-                "<td><input role='button' value='Slet annonce' class='btn btn-success  btn-md DeleteAdButton' data-adid=" + ad.adId + "></td>" +
-                "<td><a role='button' id='UptateAdButton' class='btn btn-success btn-md' href='/Client/HTML/updateadUser.html' data-adid=" + ad.adId + ">Rediger annonce</a></td>" +
-                "<td><input role='button' value='Reserver annonce' class='btn btn-success btn-md ReserveAdButton' data-adid=" + ad.adId + "></td>" +
+                "<td><input type='button' value='Slet annonce' class='btn btn-success  btn-md DeleteAdButton' data-adid=" + ad.adId + "></td>" +
+                "<td><input type='button' value='Rediger annonce' class='btn btn-primary btn-md UptateAdButton' data-toggle='modal' data-target='#myModal'  data-adid=" + ad.adId + "></td>" +
+                "<td><input type='button' value='Reserver annonce' class='btn btn-success btn-md ReserveAdButton' data-adid=" + ad.adId + "></td>" +
                 "</tr>")
         });
 
@@ -52,7 +52,6 @@ $(document).ready(function () {
             });
 
             $(".ReserveAdButton").on("click", function () {
-                //window.alert("Er du sikker på at du vil reservere denne annonce?");
                 var variable = confirm("Ønsker du at reservere denne bog?");
                 if (variable == true) {
 
@@ -60,23 +59,36 @@ $(document).ready(function () {
 
                     var ad = {
                         id: $reserveAd.data("adid")
-                    }
+                    };
                     SDK.Ad.reservead(ad, function (err, data) {
                         if (err) throw JSON.stringify(err);
                         location.reload();
-
                     })
-
                 }
-
                 else {
-
                     window.close();
-
                 }
+            });
+        //mangler lige det sidste
+        $("#updateAdButton").on("click", function() {
 
+            var ad = {
+                comment: $("#newAdComment").val(),
+                rating: +$("#newAdRating").val(),
+                price: $("#newAdPrice").val()
 
-            })
+            };
+            console.log(ad);
+
+            SDK.Ad.updatemyads(ad, function(err, data) {
+                if (err) throw JSON.stringify(err);
+                console.log(ad.isbn);
+
+                alert("Tillykke, du har nu opdateret en annonce!");
+                window.location.href = "adsUser.html";
+            });
+
+        });
 
         })
 

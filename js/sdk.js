@@ -49,9 +49,6 @@ var SDK = {
     },
 
     Admin: {
-        createadmin: function (data, cb) {
-            SDK.request({method: "POST", url: "/createadmin", data: data}, cb);
-        },
         showusers: function (cb) {
             SDK.request({method: "GET", url: "/getusers"}, cb);
         },
@@ -71,11 +68,9 @@ var SDK = {
         create: function (data, cb) {
             SDK.request({method: "POST", url: "/createad", data: data}, cb);
         },
-
         delete: function (data, cb) {
             SDK.request({method: "POST", url: "/deletead", data: data}, cb);
         },
-
         show: function (cb) {
             SDK.request({method: "GET", url: "/getads"}, cb);
         },
@@ -92,7 +87,8 @@ var SDK = {
             SDK.request({method: "POST", url: "/reservead", data: data}, cb);
         },
         deletereservation: function(data, cb) {
-            SDK.request({method: "POST", url: "/unlockad", data: data}, cb);
+            SDK.request({method: "POST", url: "/deletereservation", data: data}, cb);
+
         }
     },
 
