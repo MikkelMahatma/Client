@@ -27,9 +27,15 @@ $(document).ready(function () {
                 "<td>" + ad.price + "</td>" +
                 //slet knappen skal kun komme når der er en bruger der er logget ind
                 "<td><input type='button' value='Slet annonce' class='btn btn-success  btn-md DeleteAdButton' data-adid=" + ad.adId + "></td>" +
-                "<td><input type='button' value='Rediger annonce' class='btn btn-primary btn-md' data-toggle='modal' data-target='#myModal'  data-adid=" + ad.adId + "></td>" +
+                "<td><input type='button' value='Rediger annonce' class='btn btn-primary btn-md showModal'  data-adid=" + ad.adId + "></td>" +
                 "<td><input type='button' value='Reserver annonce' class='btn btn-success btn-md ReserveAdButton' data-adid=" + ad.adId + "></td>" +
                 "</tr>")
+        });
+
+        $(".showModal").on("click", function(){
+            var adId = $(this).data("adid");
+            $("#myModal").modal();
+            $("#adIdInput").val(adId);
         });
 
         $(".DeleteAdButton").on("click", function () {
@@ -49,33 +55,31 @@ $(document).ready(function () {
             else {
                 window.close();
             }
-            });
+        });
 
-            $(".ReserveAdButton").on("click", function () {
-                var variable = confirm("Ønsker du at reservere denne bog?");
-                if (variable == true) {
+        $(".ReserveAdButton").on("click", function () {
+            var variable = confirm("Ønsker du at reservere denne bog?");
+            if (variable == true) {
 
-                    var $reserveAd = $(this);
+                var $reserveAd = $(this);
 
-                    var ad = {
-                        id: $reserveAd.data("adid")
-                    };
-                    SDK.Ad.reservead(ad, function (err, data) {
-                        if (err) throw JSON.stringify(err);
-                        location.reload();
-                    })
-                }
-                else {
-                    window.close();
-                }
-            });
+                var ad = {
+                    id: $reserveAd.data("adid")
+                };
+                SDK.Ad.reservead(ad, function (err, data) {
+                    if (err) throw JSON.stringify(err);
+                    location.reload();
+                })
+            }
+            else {
+                window.close();
+            }
+        });
         //mangler lige det sidste
-        $(".UpdateAdButton").on("click", function() {
-
-            var $updateAd = $(this);
+        $(".UpdateAdButton").on("click", function () {
 
             var ad = {
-                id: $updateAd.data("adid"),
+                id: $("#adIdInput").val(),
                 comment: $("#newAdComment").val(),
                 rating: +$("#newAdRating").val(),
                 price: $("#newAdPrice").val()
@@ -83,7 +87,7 @@ $(document).ready(function () {
             };
             console.log(ad);
 
-            SDK.Ad.updatemyads(ad, function(err, data) {
+            SDK.Ad.updatemyads(ad, function (err, data) {
                 if (err) throw JSON.stringify(err);
                 console.log(ad.isbn);
 
@@ -93,7 +97,7 @@ $(document).ready(function () {
 
         });
 
-        })
+    })
 
 });
 

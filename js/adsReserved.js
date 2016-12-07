@@ -15,6 +15,7 @@ $(document).ready(function () {
                 "<td>" + ad.bookIsbn + "</td>" +
                 "<td>" + ad.userUsername + "</td>" +
                 "<td>" + ad.userPhonenumber + "</td>" +
+                "<td>" + ad.timestamp + "</td>" +
                 "<td><input role='button' value='Slet reservation' class='btn btn-success btn-md DeleteReservedAdButton' data-adid="+ ad.adId + "></td>"+
                 "</tr>")
         });

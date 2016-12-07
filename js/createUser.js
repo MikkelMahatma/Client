@@ -21,7 +21,7 @@ $("#addNewUserButton").on("click", function() {
         console.log(user.username);
 
         /*alert("Tillykke, du har nu opretet en bruger");*/
-        window.location.href = "usercreated.html";
+        window.location.href = "index.html";
     });
 
 });
