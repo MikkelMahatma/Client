@@ -79,10 +79,10 @@ $(document).ready(function () {
         $(".UpdateAdButton").on("click", function () {
 
             var ad = {
-                id: $("#adIdInput").val(),
+                id: +$("#adIdInput").val(),
                 comment: $("#newAdComment").val(),
                 rating: +$("#newAdRating").val(),
-                price: $("#newAdPrice").val()
+                price: +$("#newAdPrice").val()
 
             };
             console.log(ad);
@@ -92,7 +92,7 @@ $(document).ready(function () {
                 console.log(ad.isbn);
 
                 alert("Tillykke, du har nu opdateret en annonce!");
-                window.location.href = "adsUser.html";
+                location.reload();
             });
 
         });
