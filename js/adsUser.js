@@ -21,7 +21,7 @@ $(document).ready(function () {
                 "<td>" + ad.bookTitle + "</td>" +
                 "<td>" + ad.bookAuthor + "</td>" +
                 "<td>" + ad.bookEdition + "</td>" +
-                "<td>" + ad.bookIsbn + "</td>" +
+                "<td>" + ad.isbn + "</td>" +
                 "<td>" + ad.rating + "</td>" +
                 "<td>" + ad.comment + "</td>" +
                 "<td>" + ad.price + "</td>" +

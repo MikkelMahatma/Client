@@ -1,3 +1,4 @@
+"588b99e","Mikkel","Thu, 15 Dec 2016 15:24:33 +0100","... ok var ikke helt færdig. minimale visuelle rettelser.. FÆRDIG!",	 4 files changed, 80 insertions(+), 65 deletions(-)	
 "107d3a6","Mikkel","Thu, 15 Dec 2016 13:08:44 +0100","oprydning fuldendt. endelig færdig!",	 13 files changed, 27 insertions(+), 983 deletions(-)	
 "8afe79f","Mikkel","Thu, 15 Dec 2016 13:05:40 +0100","mindre ændring i "adsUser.js" så brugeren ikke kan reservere sine egne annoncer",	 4 files changed, 142 insertions(+), 143 deletions(-)	
 "4845818","Mikkel","Wed, 7 Dec 2016 15:12:07 +0100"," "opdater annonce" virker nu (og ikke "opdater bruger" som skrevet i de sidste commits)",	 2 files changed, 108 insertions(+), 179 deletions(-)	
