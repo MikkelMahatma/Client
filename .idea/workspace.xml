@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70518a6-9c0e-4877-b811-0088306baeb3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/createuserAdmin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deleteadAdmin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deleteadUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deletebookAdmin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deletebookUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/indexUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/myadsUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/updateadUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/usercreated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/userupdated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/oprydning/reserveAd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/oprydning/updateAd.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/adsUser.html" afterPath="$PROJECT_DIR$/HTML/adsUser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/adsUser.js" afterPath="$PROJECT_DIR$/js/adsUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/books.js" afterPath="$PROJECT_DIR$/js/books.js" />
     </list>
     <ignored path="Client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -375,7 +384,7 @@
       <updated>1479990213369</updated>
       <workItem from="1479990214603" duration="125934000" />
       <workItem from="1481110316018" duration="20000" />
-      <workItem from="1481115633191" duration="13154000" />
+      <workItem from="1481115633191" duration="13348000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1479990241569</created>
@@ -454,17 +463,24 @@
       <option name="project" value="LOCAL" />
       <updated>1481119927399</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="mindre ændring i &quot;adsUser.js&quot; så brugeren ikke kan reservere sine egne annoncer">
+      <created>1481803540289</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1481803540294</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139108000" />
+    <option name="totallyTimeSpent" value="139302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="27" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23608175" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23608175" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5024805" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35843793" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -507,7 +523,8 @@
     <MESSAGE value="oprydning næsten fuldendt og &quot;opdater bruger&quot; er tæt på funktionel" />
     <MESSAGE value="oprydning næsten fuldendt og &quot;opdater bruger&quot; er endnu tættere på at virke" />
     <MESSAGE value=" &quot;opdater annonce&quot; virker nu (og ikke &quot;opdater bruger&quot; som skrevet i de sidste commits)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" &quot;opdater annonce&quot; virker nu (og ikke &quot;opdater bruger&quot; som skrevet i de sidste commits)" />
+    <MESSAGE value="mindre ændring i &quot;adsUser.js&quot; så brugeren ikke kan reservere sine egne annoncer" />
+    <option name="LAST_COMMIT_MESSAGE" value="mindre ændring i &quot;adsUser.js&quot; så brugeren ikke kan reservere sine egne annoncer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -646,9 +663,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
