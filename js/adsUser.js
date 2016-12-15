@@ -39,7 +39,7 @@ $(document).ready(function () {
         });
 
         $(".DeleteAdButton").on("click", function () {
-            var variable = confirm("Ønsker du at reservere denne bog?");
+            var variable = confirm("Ønsker du at slette denne annonce?");
             if (variable == true) {
 
                 var $deleteAd = $(this);

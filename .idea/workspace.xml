@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70518a6-9c0e-4877-b811-0088306baeb3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/createuserAdmin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deleteadAdmin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deleteadUser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deletebookAdmin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/deletebookUser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/indexUser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/myadsUser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/updateadUser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/usercreated.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/oprydning/userupdated.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/oprydning/reserveAd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/oprydning/updateAd.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/userpage.html" afterPath="$PROJECT_DIR$/HTML/userpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/adsUser.js" afterPath="$PROJECT_DIR$/js/adsUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.csv" afterPath="$PROJECT_DIR$/log.csv" />
     </list>
     <ignored path="Client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,21 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createUser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/createUser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="adsUser.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/adsUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -70,24 +51,24 @@
       <file leaf-file-name="ads.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ads.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="285">
               <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userpage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userpage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTML/userpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="57" column="22" selection-start-line="30" selection-start-column="16" selection-end-line="57" selection-end-column="22" />
+            <state relative-caret-position="322">
+              <caret line="63" column="102" selection-start-line="63" selection-start-column="102" selection-end-line="63" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="books.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/books.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -125,6 +106,18 @@
             <state relative-caret-position="167">
               <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateUser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/updateUser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#50#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +180,6 @@
         <option value="$PROJECT_DIR$/HTML/oprydning/deletebookAdmin.html" />
         <option value="$PROJECT_DIR$/HTML/oprydning/deletebookUser.html" />
         <option value="$PROJECT_DIR$/HTML/books.html" />
-        <option value="$PROJECT_DIR$/HTML/userpage.html" />
         <option value="$PROJECT_DIR$/HTML/index.html" />
         <option value="$PROJECT_DIR$/HTML/adminpage.html" />
         <option value="$PROJECT_DIR$/js/booksAdmin.js" />
@@ -207,8 +199,9 @@
         <option value="$PROJECT_DIR$/js/createUser.js" />
         <option value="$PROJECT_DIR$/js/sdk.js" />
         <option value="$PROJECT_DIR$/js/books.js" />
-        <option value="$PROJECT_DIR$/js/adsUser.js" />
         <option value="$PROJECT_DIR$/HTML/adsUser.html" />
+        <option value="$PROJECT_DIR$/js/adsUser.js" />
+        <option value="$PROJECT_DIR$/HTML/userpage.html" />
       </list>
     </option>
   </component>
@@ -384,7 +377,7 @@
       <updated>1479990213369</updated>
       <workItem from="1479990214603" duration="125934000" />
       <workItem from="1481110316018" duration="20000" />
-      <workItem from="1481115633191" duration="13348000" />
+      <workItem from="1481115633191" duration="13848000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1479990241569</created>
@@ -470,17 +463,24 @@
       <option name="project" value="LOCAL" />
       <updated>1481803540294</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="oprydning fuldendt. endelig færdig!">
+      <created>1481803724844</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1481803724845</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139302000" />
+    <option name="totallyTimeSpent" value="139802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="27" width="1440" height="873" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23608175" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23608175" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5024805" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35843793" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -524,7 +524,8 @@
     <MESSAGE value="oprydning næsten fuldendt og &quot;opdater bruger&quot; er endnu tættere på at virke" />
     <MESSAGE value=" &quot;opdater annonce&quot; virker nu (og ikke &quot;opdater bruger&quot; som skrevet i de sidste commits)" />
     <MESSAGE value="mindre ændring i &quot;adsUser.js&quot; så brugeren ikke kan reservere sine egne annoncer" />
-    <option name="LAST_COMMIT_MESSAGE" value="mindre ændring i &quot;adsUser.js&quot; så brugeren ikke kan reservere sine egne annoncer" />
+    <MESSAGE value="oprydning fuldendt. endelig færdig!" />
+    <option name="LAST_COMMIT_MESSAGE" value="oprydning fuldendt. endelig færdig!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,16 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/updateUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/oprydning/createuserAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -847,14 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/userpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="57" column="22" selection-start-line="30" selection-start-column="16" selection-end-line="57" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/adsUser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -884,26 +867,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/adsUser.js">
+    <entry file="file://$PROJECT_DIR$/js/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/updateUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ads.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
+        <state relative-caret-position="285">
           <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/books.js">
+    <entry file="file://$PROJECT_DIR$/js/adsUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="90">
+          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/userpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="63" column="102" selection-start-line="63" selection-start-column="102" selection-end-line="63" selection-end-column="102" />
           <folding />
         </state>
       </provider>
