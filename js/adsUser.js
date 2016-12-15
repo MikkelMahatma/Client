@@ -28,7 +28,7 @@ $(document).ready(function () {
                 //slet knappen skal kun komme når der er en bruger der er logget ind
                 "<td><input type='button' value='Slet annonce' class='btn btn-success  btn-md DeleteAdButton' data-adid=" + ad.adId + "></td>" +
                 "<td><input type='button' value='Rediger annonce' class='btn btn-primary btn-md showModal'  data-adid=" + ad.adId + "></td>" +
-                "<td><input type='button' value='Reserver annonce' class='btn btn-success btn-md ReserveAdButton' data-adid=" + ad.adId + "></td>" +
+                //"<td><input type='button' value='Reserver annonce' class='btn btn-success btn-md ReserveAdButton' data-adid=" + ad.adId + "></td>" +
                 "</tr>")
         });
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
             }
         });
 
-        $(".ReserveAdButton").on("click", function () {
+       /* $(".ReserveAdButton").on("click", function () {
             var variable = confirm("Ønsker du at reservere denne bog?");
             if (variable == true) {
 
@@ -74,8 +74,8 @@ $(document).ready(function () {
             else {
                 window.close();
             }
-        });
-        //mangler lige det sidste
+        });*/
+
         $(".UpdateAdButton").on("click", function () {
 
             var ad = {

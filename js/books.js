@@ -3,10 +3,9 @@
  */
 
 
-//Test
+
 $(document).ready(function () {
 
-//Fires on page-load
     SDK.Book.getAll(function (err, data) {
         if (err) throw JSON.stringify(err);
         console.log(data);
@@ -21,8 +20,5 @@ $(document).ready(function () {
                 "<td>" + book.isbn + "</td>" +
                 "</tr>")
         });
-
     });
-
-
 });
